@@ -1,5 +1,6 @@
 # Taller07
 ## Parte 1
+nombres: Christopher Jaramillo, Diego Ortiz
 
 ### Taller 7 (Laboratorio): Construcción de programas usando estructuras de control repetitivas (while)
 * Por cada problemática crear un proyecto en Netbeans.
