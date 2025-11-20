@@ -21,22 +21,24 @@ public class Problema04 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         String cadena = "1";
+        double resultado = 1;
         int denominador = 3;
-        int contador = 1;
+        int contador = 2;
 
         while (denominador <= 15) {
 
             if (contador % 2 == 0) {
-                cadena = String.format("%s + 1/%d", cadena, denominador);
-            } else {
                 cadena = String.format("%s - 1/%d", cadena, denominador);
+                resultado = resultado - (1.0 / denominador);
+            } else {
+                cadena = String.format("%s + 1/%d", cadena, denominador);
+                resultado = resultado + (1.0 / denominador);
             }
 
             denominador = denominador + 2;
             contador = contador + 1;
         }
-
-        System.out.println(cadena);
+        System.out.printf("%s\nResultado final: %.6f\n", cadena, resultado);
 
     }
 }
